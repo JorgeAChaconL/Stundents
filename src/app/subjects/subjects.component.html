@@ -1,0 +1,27 @@
+<h1>Welcome to the Subject detail page</h1>
+
+<h2>Please add all the info required</h2>
+
+<div>
+    <label>Main Subject</label><br>
+    <input type="text" [(ngModel)]='main'   placeholder="Please add the first subject"><br>
+    <label>Second Subject</label><br>
+    <input type="text" [(ngModel)]='second' placeholder="Please add the second subject"><br>
+    <label>Third Subject</label><br>
+    <input type="text" [(ngModel)]='third'  placeholder="Please add the third subject"><br>
+    <label>Career</label><br>
+    <input type="text" [(ngModel)]='career' placeholder="Please add the career of the student"><br>
+    <label>Address</label><br>
+    <input type="text" [(ngModel)]='address' placeholder="Please add the address of the student"><br>
+    <label>Telephone</label><br>
+    <input type="tel" [(ngModel)]='phone' placeholder="Please add the telephone of the student"><br>
+    <br>
+    <button (click)='subjectInfo(main,second,third,career,address,phone)'> Summit Info</button>
+
+
+
+</div>
+<h3>To go back to the main page click this button</h3>
+<div><br>
+    <button routerLink='/home'>Home</button>
+</div>

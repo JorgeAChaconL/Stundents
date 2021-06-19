@@ -1,0 +1,25 @@
+<h1> Welcome Back to your website</h1>
+
+<p> If you want to add a new student, please select <span style="color: red;">student</span> option</p>
+<p> If you want to set the subjects details, please select <span style="color: red;">subjects</span> option</p>
+
+
+<button routerLink='/student'>Student</button>
+<button routerLink='/subject'> Subjects</button>
+
+<br><br>
+<div> Send your name
+<input type="text" [(ngModel)]='name' placeholder="Type your first name">
+<input type="text" [(ngModel)]='lastname' placeholder="Type your first name">
+<button (click)='post(name, lastname)'>Send</button>
+</div>
+<br>
+<br>
+<div>Get a greeting
+<button (click)='get()'>Say HI</button>
+</div>
+
+<div>
+    <h3>Ready to leave?</h3>
+    <button routerLink=''>LOG OUT</button>
+</div>

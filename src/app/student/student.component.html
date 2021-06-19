@@ -1,0 +1,24 @@
+<h1>Student Creation Page</h1>
+
+<h2>To create a new student please type the require information</h2>
+
+<h3>Remember to verify this information</h3>
+
+<div>
+<label> Full Name</label><br>
+<input type="text" [(ngModel)]='name' placeholder="Type student name"><br>
+
+<label> Institutional Email</label><br>
+<input type="text" [(ngModel)]='email' placeholder="Type his/her institutional email"><br>
+
+<label> Password</label><br>    
+<input type="password" [(ngModel)]='pass' placeholder="Set the default password"><br>
+
+<button (click)='summit(name,email,pass)'> Summit Info</button>
+
+</div>
+
+<h3>To go back to the main page click this button</h3>
+<div><br>
+    <button routerLink='/home'>Home</button>
+</div>
